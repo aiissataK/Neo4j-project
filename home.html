@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="UTF-8">
+        <title>App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+          #map {
+            height: 700px;
+            width: 100%;
+           }
+        </style>
+     
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="City" id="city"  required> 
+                        <button type="button" onClick="showMyPosition()" class="btn btn-default"> <span class="glyphicon glyphicon-map-marker"></span> locate me!</button> 
+                        <input type="text" class="form-control" placeholder="Your Research" id="search" required>
+                    </div>
+                    <button type="button" class="btn btn-default" onClick="research()">Submit</button>
+                </form>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Restaurants proche de vous</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            <div id="map">      
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <div>
+                                <ul class="list-group" id="list">                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="includes/js/location.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA54H_FsptOet0ufoHEGmN8ugyoWh2Iq7s&callback=initMap"> </script>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    </body>
+</html>
