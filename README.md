@@ -12,7 +12,7 @@ The user can also specify the name of an restaurant or something he want to eat 
 ![alt text](https://github.com/aiissataK/Neo4j-project/blob/master/includes/img/img2.png)
 
 In this project we use <b>Neo4j bolt driver</b> for javascript to communicate with our database. 
-## Usage examples
+## Usage examples of Neo4j driver
 
 Initialization of the neo4j object:
 ```javascript
